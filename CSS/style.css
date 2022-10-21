@@ -1,0 +1,415 @@
+body {
+    margin:0px;
+    height: 1500px;
+    background-color: #ffffff;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.prd{
+    height: 950px;
+    background: url(../img/pexels1.jpg) fixed; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.frame { 
+    margin-top: 30px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigator {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+li {
+    display: inline;
+    align-self: center;
+    margin: 0;
+    margin-left: 15px;
+
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.site-name {
+    margin: 0;
+    font-family: 'Montserrat',  sans-serif;
+    font-size: 24px;
+    color: #C2B4AB;
+}
+.nav-menu{
+    font-family: 'Montserrat',  sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+a{
+    color: gray;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    transition: 0.3s;
+
+
+
+}
+
+/*dashboard*/
+
+
+h1{
+    font-size: 4em;
+    width: 600px;
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    animation: slide 1s ease-out;
+
+}
+
+
+@keyframes slide{
+    from{
+        left: -150px;
+        opacity: 0;
+    }
+    to{
+        left:150px;
+        opacity: 1;
+    }
+}
+@keyframes disappear{
+    from{
+        left: 150px;
+        opacity: 1;
+    }
+    to{
+        left: -150px;
+        opacity: 0;
+    }
+}
+
+/*INFO Section*/
+
+/*profile-section*/
+
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 100px 100px;
+}
+
+#profile-picture{
+    width: 400px;
+    margin-right: 60px;
+}
+
+.intruduction>h2{
+    margin: 0;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+.intruduction>p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 40px;
+
+   
+}
+
+#capability{ 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+
+    line-height: 30px;
+}
+
+/*value section*/
+
+.value-menu{
+    font-family: 'Montserrat', sans-serif;
+    
+    font-size: 35px;
+    font-style: italic;
+
+    margin: 30px 100px;
+
+}
+
+.value-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 100px 150px;
+    margin-top: 20px;
+}
+
+.value{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    align-items: center;
+
+}
+
+
+.value-icon{
+    width: 100px;
+    height: 100px;
+
+    border: 2px solid #C2B4AB;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.value-intro{
+    margin-left: 30px;
+}
+
+
+.value-name{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.value-exp{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
+    margin: 0px;
+}
+
+
+
+
+
+
+
+/*prject*/
+section{
+    height: 800px;
+    background: url(../img/pexels2.jpg) fixed; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about, .skills, .my-project, .contact{
+    font-family:'Poppins' sans-serif;
+}
+
+
+.my-project .title{
+    color: white;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 30px 0 100px 0;
+    padding-bottom: 8px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.my-project .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 160px;
+    height: 3px;
+    transform: translateX(-50%);
+
+}
+
+.my-project .title::after{
+    content: "";
+    position: absolute;
+    bottom: -38px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(255,164,45);
+    padding: 5px;
+    transform: translateX(-50%);
+
+}
+.my-project .my-project-content{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-between;
+
+}
+
+
+.my-project{
+    padding: 100px 0;
+    transition: all 0.3s ease;
+}
+
+
+.my-project .my-project-content{
+    margin-bottom: 100px;
+}
+
+.my-project .my-project-content .left{
+    width: 32%;
+}
+
+.my-project .my-project-content .center{
+    width: 32%;
+}
+
+.my-project .my-project-content .right{
+    width: 32%;
+}
+
+.my-project .my-project-content a{
+    display: flex;
+    text-align: center;
+    color: black;
+}
+
+.my-project .my-project-content a,
+.my-project .my-project-content a:visited,
+.my-project .my-project-content a:active,
+.my-project .my-project-content a:hover{
+    text-decoration: none;
+}
+
+.my-project .my-project-content .project{
+    background-color: rgb(240,236,236);
+    border-radius: 6px;
+    padding: 25px 35px;
+    transition: all 0.3s ease;
+}
+
+.my-project .my-project-content .project img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(255,164,45);
+    transition: all 0.3s ease;
+}
+
+.my-project .my-project-content .project-text{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.my-project .my-project-content p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.my-project .my-project-content .project:hover{
+    background-color: rgb(25,8,53);
+    color: white;
+    transform: scale(1.05);
+}
+
+.my-project .my-project-content .project:hover img{
+   border-color: white;
+}
+
+
+
+
+/*footer*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 0px;  
+    
+}
+
+.contact{
+    font-family: 'Montserrat',  sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    
+}
+
+link {
+    padding-left: 0px;
+}
+
+.links>a{
+    font-family: 'Montserrat',  sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+   
+    
+   
+}
+
+.footer>p{
+    font-family: 'Noto Sans KR',  sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*footer section*/
+
+.footer-comment{
+    text-align:center;
+}
+
+
+a[title="Freepik"]:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+a[title="Flaticon"]:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+
+@media screen and(max-width:780px){
+    
+    
+}
+
+
+
